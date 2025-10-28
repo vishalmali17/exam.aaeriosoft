@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- Title -->
+  <title>Message Sent Successfully | Aaeriosoft</title>
+
+  <!-- Meta Description -->
+  <meta name="description"
+    content="Your message has been successfully sent to Aaeriosoft. Our team will get back to you shortly with the right support and solutions." />
+
+  <!-- Robots (avoid indexing this utility page) -->
+  <meta name="robots" content="noindex, nofollow" />
+
+  <!-- Canonical -->
+  <link rel="canonical" href="https://aaeriosoft.co.in/contact" />
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:title" content="Message Sent Successfully | Aaeriosoft" />
+  <meta property="og:description"
+    content="Thank you for contacting Aaeriosoft. Our IT consultancy team will respond shortly." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://aaeriosoft.co.in/contact" />
+  <meta property="og:image" content="https://aaeriosoft.co.in/assets/og-contact.jpg" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Message Sent Successfully | Aaeriosoft" />
+  <meta name="twitter:description"
+    content="Your message was successfully sent. The Aaeriosoft team will contact you soon." />
+  <meta name="twitter:image" content="https://aaeriosoft.co.in/assets/og-contact.jpg" />
+
+  <!-- Favicons -->
+  <link rel="icon" type="image/svg+xml" href="images/favicon.svg" />
+  <link rel="alternate icon" type="image/png" href="images/favicon.png" />
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="../css/style.css" />
+</head>
+
+  <body
+    x-data="{ page: '404', 'loaded': true, 'stickyMenu': false, 'navigationOpen': false, 'scrollTop': false }"
+  >
+     <header
+    :class="{ 'bg-dark/70 backdrop-blur-lg shadow !py-4 lg:!py-0 transition duration-100 before:absolute before:w-full before:h-[1px] before:bottom-0 before:left-0 before:features-row-border' : stickyMenu }"
+    @scroll.window="stickyMenu = (window.scrollY &gt; 0) ? true : false"
+    class="fixed left-0 top-0 w-full z-9999 py-7 lg:py-0">
+
+    <div class="max-w-[1170px] mx-auto px-4 sm:px-8 xl:px-0 lg:flex items-center justify-between relative">
+
+      <div class="w-full lg:w-1/4 flex items-center justify-between">
+        <a href="index.html" class="logo">
+          <img alt="Logo" src="../images/logo.svg" />
+        </a>
+        <button @click="navigationOpen = !navigationOpen" class="lg:hidden block">
+          <span class="block relative cursor-pointer w-5.5 h-5.5">
+            <span class="du-block absolute right-0 w-full h-full">
+              <span :class="{ '!w-full delay-300': !navigationOpen }"
+                class="block relative top-0 left-0 bg-white rounded-sm w-0 h-0.5 my-1 ease-in-out duration-200 delay-[0]"></span>
+              <span :class="{ '!w-full delay-400': !navigationOpen }"
+                class="block relative top-0 left-0 bg-white rounded-sm w-0 h-0.5 my-1 ease-in-out duration-200 delay-150"></span>
+              <span :class="{ '!w-full delay-500': !navigationOpen }"
+                class="block relative top-0 left-0 bg-white rounded-sm w-0 h-0.5 my-1 ease-in-out duration-200 delay-200"></span>
+            </span>
+            <span class="du-block absolute right-0 w-full h-full rotate-45">
+              <span :class="{ '!h-0 delay-[0]': !navigationOpen }"
+                class="block bg-white rounded-sm ease-in-out duration-200 delay-300 absolute left-2.5 top-0 w-0.5 h-full"></span>
+              <span :class="{ '!h-0 dealy-200': !navigationOpen }"
+                class="block bg-white rounded-sm ease-in-out duration-200 delay-400 absolute left-0 top-2.5 w-full h-0.5"></span>
+            </span>
+          </span>
+        </button>
+      </div>
+      <div
+        :class="{ '!visible bg-dark shadow-lgrelative !h-auto max-h-[400px] overflow-y-scroll rounded-md mt-4 p-7.5': navigationOpen }"
+        class="w-full lg:w-3/4 h-0 lg:h-auto invisible lg:visible lg:flex items-center justify-between">
+        <nav>
+          <ul class="flex lg:items-center flex-col lg:flex-row gap-5 lg:gap-2">
+            <li :class="{ 'lg:!py-4' : stickyMenu }" class="nav__menu lg:py-7">
+              <a :class="{'!text-white nav-gradient' :page === 'home'}"
+                class="relative text-white/80 text-sm py-1.5 px-4 border border-transparent hover:text-white hover:nav-gradient"
+                href="index.html">Home</a>
+            </li>
+            <li :class="{ 'lg:!py-4' : stickyMenu }" class="nav__menu lg:py-7">
+              <a class="relative text-white/80 text-sm py-1.5 px-4 border border-transparent hover:text-white hover:nav-gradient"
+                href="about.html">About</a>
+            </li>
+            <li :class="{ 'lg:!py-4' : stickyMenu }" class="nav__menu lg:py-7">
+              <a class="relative text-white/80 text-sm py-1.5 px-4 border border-transparent hover:text-white hover:nav-gradient"
+                href="services.html">Services</a>
+            </li>
+
+            <li :class="{ 'lg:!py-4' : stickyMenu }" class="nav__menu lg:py-7">
+              <a class="relative text-white/80 text-sm py-1.5 px-4 border border-transparent hover:text-white hover:nav-gradient"
+                href="careers.html">Careers</a>
+            </li>
+
+            <li :class="{ 'lg:!py-4' : stickyMenu }" class="nav__menu lg:py-7">
+              <a class="relative text-white/80 text-sm py-1.5 px-4 border border-transparent hover:text-white hover:nav-gradient"
+                href="contact.html">Support</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="flex items-center gap-6 mt-7 lg:mt-0">
+          <a class="button-border-gradient relative rounded-lg text-white text-sm flex items-center gap-1.5 py-2 px-4.5 shadow-button hover:button-gradient-hover hover:shadow-none"
+            href="contact.html">
+            Let’s Talk
+            <svg class="mt-0.5" fill="none" height="16" viewbox="0 0 16 16" width="16"
+              xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M14.4002 7.60002L9.2252 2.35002C9.0002 2.12502 8.6502 2.12502 8.4252 2.35002C8.2002 2.57502 8.2002 2.92502 8.4252 3.15002L12.6252 7.42502H2.0002C1.7002 7.42502 1.4502 7.67502 1.4502 7.97502C1.4502 8.27502 1.7002 8.55003 2.0002 8.55003H12.6752L8.4252 12.875C8.2002 13.1 8.2002 13.45 8.4252 13.675C8.5252 13.775 8.6752 13.825 8.8252 13.825C8.9752 13.825 9.1252 13.775 9.2252 13.65L14.4002 8.40002C14.6252 8.17502 14.6252 7.82503 14.4002 7.60002Z"
+                fill="white"></path>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+    <main>
+      <section class="relative z-10 pt-30 lg:pt-35 xl:pt-40 pb-18">
+        <div
+          class="absolute top-25 left-0 w-full flex flex-col gap-3 -z-1 opacity-50"
+        >
+          <div class="w-full h-[1.24px] footer-bg-gradient"></div>
+          <div class="w-full h-[2.47px] footer-bg-gradient"></div>
+          <div class="w-full h-[3.71px] footer-bg-gradient"></div>
+          <div class="w-full h-[4.99px] footer-bg-gradient"></div>
+          <div class="w-full h-[6.19px] footer-bg-gradient"></div>
+          <div class="w-full h-[7.42px] footer-bg-gradient"></div>
+          <div class="w-full h-[8.66px] footer-bg-gradient"></div>
+          <div class="w-full h-[9.90px] footer-bg-gradient"></div>
+          <div class="w-full h-[13px] footer-bg-gradient"></div>
+        </div>
+        <div
+          class="absolute bottom-0 left-0 w-full h-24 bg-gradient-to-b from-dark/0 to-dark -z-1"
+        ></div>
+        <div class="text-center px-4">
+          <h1 class="font-extrabold text-heading-2 text-white mb-5.5">
+            Success Page
+          </h1>
+          <ul class="flex items-center justify-center gap-2">
+            <li class="font-medium"><a href="index.html">Home</a></li>
+            <li class="font-medium">/ succeed</li>
+          </ul>
+        </div>
+      </section>
+      <section
+        class="pt-17.5 lg:pt-22.5 xl:pt-27.5 pb-20 lg:pb-25 xl:pb-30 2xl:pb-[150px]"
+      >
+        <div
+          class="wow fadeInUp mx-auto w-full max-w-[597px] text-center px-4 sm:px-8 lg:px-0"
+          data-wow-delay="0.1s"
+        >
+          <img alt="404" class="mx-auto mb-12.5" src="../images/404.svg" />
+          <h2 class="mb-5.5 text-heading-3 font-bold text-white">
+           Success! Your message has been delivered
+          </h2>
+          <p class="font-medium mb-9">
+           Your message has been delivered successfully. Our team will reach you shortly. Please return to the homepage with the button below.
+          </p>
+          <a
+            class="hero-button-gradient inline-flex rounded-lg py-3 px-7 text-white font-medium ease-in duration-300 hover:opacity-80"
+            href="index.html"
+          >
+            Go To Home
+          </a>
+        </div>
+      </section>
+    </main>
+<footer class="relative z-10 pb-17.5 lg:pb-22.5 xl:pb-27.5">
+    <div class="absolute bottom-0 left-0 w-full flex flex-col gap-3 -z-1 opacity-50">
+      <div class="w-full h-[1.24px] footer-bg-gradient"></div>
+      <div class="w-full h-[2.47px] footer-bg-gradient"></div>
+      <div class="w-full h-[3.71px] footer-bg-gradient"></div>
+      <div class="w-full h-[4.99px] footer-bg-gradient"></div>
+      <div class="w-full h-[6.19px] footer-bg-gradient"></div>
+      <div class="w-full h-[7.42px] footer-bg-gradient"></div>
+      <div class="w-full h-[8.66px] footer-bg-gradient"></div>
+      <div class="w-full h-[9.90px] footer-bg-gradient"></div>
+      <div class="w-full h-[13px] footer-bg-gradient"></div>
+    </div>
+    <div class="max-w-[1170px] mx-auto px-4 sm:px-8 xl:px-0 relative pt-17.5">
+      <div class="w-full h-[1px] footer-divider-gradient absolute top-0 left-0"></div>
+      <div class="flex flex-wrap justify-between">
+        <div class="mb-10 max-w-[571px] w-full">
+          <a class="mb-8.5 inline-block" href="index.html">
+            <img alt="Logo" src="../images/logo.svg" />
+          </a>
+          <p class="mb-12 xl:w-4/5">
+            We deliver creative digital services to help your business succeed.
+          </p>
+          <div class="flex items-center gap-5">
+            <!-- Facebook -->
+            <a class="hover:text-white ease-in duration-300" href="#">
+              <svg class="fill-current" fill="none" height="24" viewBox="0 0 24 24" width="24"
+                xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M13 21.9C18.05 21.4 22 17.2 22 12C22 6.5 17.5 2 12 2C6.5 2 2 6.5 2 12C2 16.8 5.4 20.9 10 21.8V16H7V13H10V9.8C10 7.5 12 5.6 14.3 5.8L17 6V9H15C13.9 9 13 9.9 13 11V13H17L16 16H13V21.9Z"
+                  fill="currentColor"></path>
+              </svg>
+            </a>
+
+            <!-- WhatsApp -->
+            <a class="hover:text-white ease-in duration-300"
+              href="https://wa.me/91942373350?text=Hello%20I%20am%20interested%20in%20your%20services" target="_blank">
+              <svg class="fill-current" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                <path
+                  d="M20.5 3.5C18.2 1.2 15.2 0 12 0 5.4 0 0 5.4 0 12c0 2.1.6 4.1 1.6 5.9L0 24l6.3-1.6C8 23.4 10 24 12 24c6.6 0 12-5.4 12-12 0-3.2-1.2-6.2-3.5-8.5zM12 21.8c-1.8 0-3.6-.5-5.1-1.5l-.4-.2-3.7 1 1-3.6-.2-.4c-1-1.6-1.5-3.4-1.5-5.2 0-5.4 4.4-9.8 9.8-9.8 2.6 0 5.1 1 6.9 2.9 1.9 1.9 2.9 4.4 2.9 6.9 0 5.4-4.4 9.9-9.7 9.9zm5.4-7.3c-.3-.1-1.7-.9-2-1-.3-.1-.5-.1-.7.2-.2.3-.8 1-.9 1.1-.2.2-.3.2-.6.1s-1.2-.5-2.3-1.5c-.9-.8-1.5-1.7-1.6-2-.2-.3 0-.5.1-.6.1-.1.3-.3.4-.4.1-.1.2-.2.3-.4.1-.1.1-.3 0-.5-.1-.2-.7-1.7-1-2.3-.3-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.3-.3.3-1.1 1-1.1 2.4s1.1 2.8 1.3 3c.2.3 2.1 3.2 5.1 4.4.7.3 1.2.5 1.6.6.7.2 1.3.2 1.8.1.6-.1 1.7-.7 2-1.3.3-.6.3-1.1.2-1.3z"
+                  fill="currentColor" />
+              </svg>
+            </a>
+
+            <!-- Instagram -->
+            <a class="hover:text-white ease-in duration-300" href="https://www.instagram.com/aaeriosoft_technologies/">
+              <svg class="fill-current" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                <path
+                  d="M7 2C4.2 2 2 4.2 2 7v10c0 2.8 2.2 5 5 5h10c2.8 0 5-2.2 5-5V7c0-2.8-2.2-5-5-5H7zm0-2h10c3.9 0 7 3.1 7 7v10c0 3.9-3.1 7-7 7H7c-3.9 0-7-3.1-7-7V7c0-3.9 3.1-7 7-7z"
+                  fill="currentColor" />
+                <path
+                  d="M12 7a5 5 0 100 10 5 5 0 000-10zm0-2a7 7 0 110 14 7 7 0 010-14zM18.5 5.5a1.5 1.5 0 11-3.001.001A1.5 1.5 0 0118.5 5.5z"
+                  fill="currentColor" />
+              </svg>
+            </a>
+
+          </div>
+
+          <p class="font-medium mt-5.5">Aaeriosoft. All rights reserved.</p>
+        </div>
+        <div class="max-w-[571px] w-full">
+          <div class="flex flex-col sm:flex-row sm:justify-between gap-10">
+            <div>
+              <h5 class="font-semibold text-white mb-5">Quick Links</h5>
+              <ul class="flex flex-col gap-3.5">
+                <li>
+                  <a class="font-medium ease-in duration-300 hover:text-white" href="#.html">Home</a>
+                </li>
+                <li>
+                  <a class="font-medium ease-in duration-300 hover:text-white" href="about.html">About</a>
+                </li>
+                <li>
+                  <a class="font-medium ease-in duration-300 hover:text-white" href="services.html">Services</a>
+                </li>
+                <li>
+                  <a class="font-medium ease-in duration-300 hover:text-white" href="careers.html">Careers</a>
+                </li>
+                <li>
+                  <a class="font-medium ease-in duration-300 hover:text-white" href="contact.html">Contact</a>
+                </li>
+              </ul>
+            </div>
+            <div>
+              <h5 class="font-semibold text-white mb-5">Other Services</h5>
+              <ul class="flex flex-col gap-3.5">
+                <li>
+                  <a class="font-medium ease-in duration-300 hover:text-white" href="services.html">IT strategy</a>
+                </li>
+                <li>
+                  <a class="font-medium ease-in duration-300 hover:text-white" href="services.html">Cloud migration</a>
+                </li>
+                <li>
+                  <a class="font-medium ease-in duration-300 hover:text-white" href="services.html">Software
+                    Development</a>
+                </li>
+                <li>
+                  <a class="font-medium ease-in duration-300 hover:text-white" href="services.html">Business
+                    Intelligence</a>
+                </li>
+                <li>
+                  <a class="font-medium ease-in duration-300 hover:text-white" href="services.html">IT training
+                    programs</a>
+                </li>
+              </ul>
+            </div>
+            <div>
+              <h5 class="font-semibold text-white mb-5">Other Links</h5>
+              <ul class="flex flex-col gap-3.5">
+                <li>
+                  <a class="font-medium ease-in duration-300 hover:text-white" href="#.html">Privacy Policy</a>
+                </li>
+                <li>
+                  <a class="font-medium ease-in duration-300 hover:text-white" href="#.html">Contact Us</a>
+                </li>
+                <li>
+                  <a class="font-medium ease-in duration-300 hover:text-white" href="#.html">Latest Blogs</a>
+                </li>
+                <li>
+                  <a class="font-medium ease-in duration-300 hover:text-white flex items-center gap-2" href="#.html">
+                    Jobs
+
+                    <span class="bg-green-600 text-white text-xs font-semibold px-2 py-0.5 rounded-full">
+                      Hiring
+                    </span>
+
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+    <button
+      :class="{ '!flex' : scrollTop }"
+      @click="window.scrollTo({top: 0, behavior: 'smooth'})"
+      @scroll.window="scrollTop = (window.pageYOffset &gt; 50) ? true : false"
+      class="hidden items-center justify-center w-10 h-10 rounded-[4px] shadow-solid-5 bg-purple hover:opacity-70 fixed bottom-8 right-8 z-999"
+    >
+      <svg
+        class="fill-white w-5 h-5"
+        viewbox="0 0 512 512"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M233.4 105.4c12.5-12.5 32.8-12.5 45.3 0l192 192c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L256 173.3 86.6 342.6c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3l192-192z"
+        ></path>
+      </svg>
+    </button>
+    <script defer="" src="../js/bundle.js"></script>
+    <script>
+      (function () {
+        function c() {
+          var b = a.contentDocument || a.contentWindow.document;
+          if (b) {
+            var d = b.createElement("script");
+            d.innerHTML =
+              "window.__CF$cv$params={r:'9763a959a8d3d532',t:'MTc1NjM4MjU2NQ=='};var a=document.createElement('script');a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";
+            b.getElementsByTagName("head")[0].appendChild(d);
+          }
+        }
+        if (document.body) {
+          var a = document.createElement("iframe");
+          a.height = 1;
+          a.width = 1;
+          a.style.position = "absolute";
+          a.style.top = 0;
+          a.style.left = 0;
+          a.style.border = "none";
+          a.style.visibility = "hidden";
+          document.body.appendChild(a);
+          if ("loading" !== document.readyState) c();
+          else if (window.addEventListener)
+            document.addEventListener("DOMContentLoaded", c);
+          else {
+            var e = document.onreadystatechange || function () {};
+            document.onreadystatechange = function (b) {
+              e(b);
+              "loading" !== document.readyState &&
+                ((document.onreadystatechange = e), c());
+            };
+          }
+        }
+      })();
+    </script>
+  </body>
+</html>
