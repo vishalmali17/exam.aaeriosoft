@@ -53,159 +53,157 @@
         }
         
         /* Header with Branding */
-/* Header with Branding */
-.header {
-    padding: 15px 0;
-    background: rgba(3, 0, 20, 0.95);
-    backdrop-filter: blur(10px);
-    position: fixed;
-    width: 100%;
-    z-index: 1000;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-}
+        .header {
+            padding: 15px 0;
+            background: rgba(3, 0, 20, 0.95);
+            backdrop-filter: blur(10px);
+            position: fixed;
+            width: 100%;
+            z-index: 1000;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        }
 
-.header-content {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
+        .header-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
 
-.brand-link {
-    text-decoration: none;
-    display: flex;
-    align-items: center;
-    transition: transform 0.3s ease;
-}
+        .brand-link {
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            transition: transform 0.3s ease;
+        }
 
-.brand-link:hover {
-    transform: scale(1.05);
-}
+        .brand-link:hover {
+            transform: scale(1.05);
+        }
 
-.brand {
-    display: flex;
-    align-items: center;
-}
+        .brand {
+            display: flex;
+            align-items: center;
+        }
 
-.brand-logo {
-    height: 45px; /* Increased size for desktop */
-    width: auto;
-    display: block;
-    transition: all 0.3s ease;
-}
+        .brand-logo {
+            height: 45px; /* Increased size for desktop */
+            width: auto;
+            display: block;
+            transition: all 0.3s ease;
+        }
 
-.brand-link:hover .brand-logo {
-    filter: brightness(1.2) drop-shadow(0 0 10px rgba(79, 70, 229, 0.3));
-}
+        .brand-link:hover .brand-logo {
+            filter: brightness(1.2) drop-shadow(0 0 10px rgba(79, 70, 229, 0.3));
+        }
 
-/* Header Actions */
-.header-actions {
-    display: flex;
-    align-items: center;
-}
+        /* Header Actions */
+        .header-actions {
+            display: flex;
+            align-items: center;
+        }
 
-.careers-btn {
-    display: flex;
-    align-items: center;
-    gap: 8px;
-    padding: 10px 20px;
-    border: 2px solid transparent;
-    border-radius: 8px;
-    text-decoration: none;
-    color: white;
-    font-weight: 600;
-    font-size: 0.9rem;
-    transition: all 0.3s ease;
-    background: 
-        linear-gradient(var(--dark), var(--dark)) padding-box,
-        linear-gradient(135deg, var(--primary), var(--secondary)) border-box;
-}
+        .careers-btn {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            padding: 10px 20px;
+            border: 2px solid transparent;
+            border-radius: 8px;
+            text-decoration: none;
+            color: white;
+            font-weight: 600;
+            font-size: 0.9rem;
+            transition: all 0.3s ease;
+            background: 
+                linear-gradient(var(--dark), var(--dark)) padding-box,
+                linear-gradient(135deg, var(--primary), var(--secondary)) border-box;
+        }
 
-.careers-btn:hover {
-    background: 
-        linear-gradient(rgba(79, 70, 229, 0.1), rgba(79, 70, 229, 0.1)) padding-box,
-        linear-gradient(135deg, var(--primary), var(--secondary)) border-box;
-    transform: translateY(-2px);
-    box-shadow: 0 5px 20px rgba(79, 70, 229, 0.4);
-}
+        .careers-btn:hover {
+            background: 
+                linear-gradient(rgba(79, 70, 229, 0.1), rgba(79, 70, 229, 0.1)) padding-box,
+                linear-gradient(135deg, var(--primary), var(--secondary)) border-box;
+            transform: translateY(-2px);
+            box-shadow: 0 5px 20px rgba(79, 70, 229, 0.4);
+        }
 
-/* Responsive Design */
-@media (min-width: 1200px) {
-    .brand-logo {
-        height: 50px; /* Even larger for big desktop screens */
-    }
-    
-    .careers-btn {
-        padding: 12px 24px;
-        font-size: 1rem;
-    }
-}
+        /* Responsive Design */
+        @media (min-width: 1200px) {
+            .brand-logo {
+                height: 50px; /* Even larger for big desktop screens */
+            }
+            
+            .careers-btn {
+                padding: 12px 24px;
+                font-size: 1rem;
+            }
+        }
 
-@media (max-width: 768px) {
-    .brand-logo {
-        height: 40px; /* Slightly smaller for tablets */
-    }
-    
-    .careers-btn {
-        padding: 8px 16px;
-        font-size: 0.85rem;
-    }
-    
-    .careers-btn span {
-        display: none; /* Hide text on smaller screens */
-    }
-    
-    .careers-btn i {
-        font-size: 1rem;
-        margin: 0;
-    }
-}
+        @media (max-width: 768px) {
+            .brand-logo {
+                height: 40px; /* Slightly smaller for tablets */
+            }
+            
+            .careers-btn {
+                padding: 8px 16px;
+                font-size: 0.85rem;
+            }
+            
+            .careers-btn span {
+                display: none; /* Hide text on smaller screens */
+            }
+            
+            .careers-btn i {
+                font-size: 1rem;
+                margin: 0;
+            }
+        }
 
-@media (max-width: 480px) {
-    .brand-logo {
-        height: 35px; /* Smaller for mobile */
-    }
-    
-    .header {
-        padding: 12px 0;
-    }
-    
-    .careers-btn {
-        padding: 8px 12px;
-    }
-}
+        @media (max-width: 480px) {
+            .brand-logo {
+                height: 35px; /* Smaller for mobile */
+            }
+            
+            .header {
+                padding: 12px 0;
+            }
+            
+            .careers-btn {
+                padding: 8px 12px;
+            }
+        }
 
-/* Animation for header on scroll */
-.header.scrolled {
-    background: rgba(3, 0, 20, 0.98);
-    box-shadow: 0 2px 20px rgba(0, 0, 0, 0.3);
-}
+        /* Animation for header on scroll */
+        .header.scrolled {
+            background: rgba(3, 0, 20, 0.98);
+            box-shadow: 0 2px 20px rgba(0, 0, 0, 0.3);
+        }
 
-/* Responsive adjustments */
-@media (max-width: 768px) {
-    .brand {
-        gap: 8px;
-        padding: 6px 15px;
-    }
-    
-    .brand-logo {
-        height: 30px;
-    }
-    
-    .brand-name {
-        font-size: 1.2rem;
-    }
-}
+        /* Responsive adjustments */
+        @media (max-width: 768px) {
+            .brand {
+                gap: 8px;
+                padding: 6px 15px;
+            }
+            
+            .brand-logo {
+                height: 30px;
+            }
+            
+            .brand-name {
+                font-size: 1.2rem;
+            }
+        }
 
-@media (max-width: 480px) {
-    .brand-name {
-        display: none; /* Hide text on very small screens */
-    }
-    
-    .brand-logo {
-        height: 35px; /* Slightly larger logo when text is hidden */
-    }
-}
-
+        @media (max-width: 480px) {
+            .brand-name {
+                display: none; /* Hide text on very small screens */
+            }
+            
+            .brand-logo {
+                height: 35px; /* Slightly larger logo when text is hidden */
+            }
+        }
 
         /* Hero Section */
         .hero {
@@ -666,258 +664,258 @@
         }
         
         /* Footer */
-footer {
-    background: var(--darker);
-    padding: 80px 0 30px;
-    border-top: 1px solid rgba(255, 255, 255, 0.1);
-    position: relative;
-    overflow: hidden;
-}
+        footer {
+            background: var(--darker);
+            padding: 80px 0 30px;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            position: relative;
+            overflow: hidden;
+        }
 
-footer::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    height: 1px;
-    background: linear-gradient(90deg, transparent, var(--primary), transparent);
-}
+        footer::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 1px;
+            background: linear-gradient(90deg, transparent, var(--primary), transparent);
+        }
 
-.footer-content {
-    display: grid;
-    grid-template-columns: 1fr 2fr;
-    gap: 60px;
-    margin-bottom: 50px;
-}
+        .footer-content {
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+            gap: 60px;
+            margin-bottom: 50px;
+        }
 
-.footer-main {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-}
+        .footer-main {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+        }
 
-.footer-brand {
-    display: inline-block;
-    margin-bottom: 20px;
-    transition: transform 0.3s ease;
-}
+        .footer-brand {
+            display: inline-block;
+            margin-bottom: 20px;
+            transition: transform 0.3s ease;
+        }
 
-.footer-brand:hover {
-    transform: scale(1.05);
-}
+        .footer-brand:hover {
+            transform: scale(1.05);
+        }
 
-.footer-logo {
-    height: 50px;
-    width: auto;
-    display: block;
-    filter: brightness(0) invert(1);
-}
+        .footer-logo {
+            height: 50px;
+            width: auto;
+            display: block;
+            filter: brightness(0) invert(1);
+        }
 
-.footer-description {
-    color: var(--gray);
-    margin-bottom: 30px;
-    line-height: 1.6;
-    font-size: 1rem;
-    max-width: 300px;
-}
+        .footer-description {
+            color: var(--gray);
+            margin-bottom: 30px;
+            line-height: 1.6;
+            font-size: 1rem;
+            max-width: 300px;
+        }
 
-.social-links {
-    display: flex;
-    gap: 15px;
-}
+        .social-links {
+            display: flex;
+            gap: 15px;
+        }
 
-.social-link {
-    width: 45px;
-    height: 45px;
-    background: rgba(255, 255, 255, 0.1);
-    border-radius: 10px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: white;
-    text-decoration: none;
-    transition: all 0.3s ease;
-    border: 1px solid rgba(255, 255, 255, 0.1);
-}
+        .social-link {
+            width: 45px;
+            height: 45px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
 
-.social-link:hover {
-    background: linear-gradient(135deg, var(--primary), var(--secondary));
-    transform: translateY(-3px);
-    box-shadow: 0 10px 20px rgba(79, 70, 229, 0.3);
-    border-color: transparent;
-}
+        .social-link:hover {
+            background: linear-gradient(135deg, var(--primary), var(--secondary));
+            transform: translateY(-3px);
+            box-shadow: 0 10px 20px rgba(79, 70, 229, 0.3);
+            border-color: transparent;
+        }
 
-/* Footer Links Grid */
-.footer-links-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 40px;
-}
+        /* Footer Links Grid */
+        .footer-links-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 40px;
+        }
 
-.footer-column h4 {
-    color: white;
-    font-size: 1.1rem;
-    font-weight: 600;
-    margin-bottom: 20px;
-    position: relative;
-}
+        .footer-column h4 {
+            color: white;
+            font-size: 1.1rem;
+            font-weight: 600;
+            margin-bottom: 20px;
+            position: relative;
+        }
 
-.footer-column h4::after {
-    content: '';
-    position: absolute;
-    bottom: -8px;
-    left: 0;
-    width: 30px;
-    height: 2px;
-    background: linear-gradient(90deg, var(--primary), var(--secondary));
-    border-radius: 2px;
-}
+        .footer-column h4::after {
+            content: '';
+            position: absolute;
+            bottom: -8px;
+            left: 0;
+            width: 30px;
+            height: 2px;
+            background: linear-gradient(90deg, var(--primary), var(--secondary));
+            border-radius: 2px;
+        }
 
-.footer-links {
-    display: flex;
-    flex-direction: column;
-    gap: 12px;
-}
+        .footer-links {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
 
-.footer-links a {
-    color: var(--gray);
-    text-decoration: none;
-    transition: all 0.3s ease;
-    padding: 5px 0;
-    position: relative;
-}
+        .footer-links a {
+            color: var(--gray);
+            text-decoration: none;
+            transition: all 0.3s ease;
+            padding: 5px 0;
+            position: relative;
+        }
 
-.footer-links a::before {
-    content: '';
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 0;
-    height: 1px;
-    background: linear-gradient(90deg, var(--primary), var(--secondary));
-    transition: width 0.3s ease;
-}
+        .footer-links a::before {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 0;
+            height: 1px;
+            background: linear-gradient(90deg, var(--primary), var(--secondary));
+            transition: width 0.3s ease;
+        }
 
-.footer-links a:hover {
-    color: white;
-    transform: translateX(5px);
-}
+        .footer-links a:hover {
+            color: white;
+            transform: translateX(5px);
+        }
 
-.footer-links a:hover::before {
-    width: 20px;
-}
+        .footer-links a:hover::before {
+            width: 20px;
+        }
 
-/* Footer Bottom */
-.footer-bottom {
-    padding-top: 30px;
-    border-top: 1px solid rgba(255, 255, 255, 0.1);
-}
+        /* Footer Bottom */
+        .footer-bottom {
+            padding-top: 30px;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+        }
 
-.footer-bottom-content {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
+        .footer-bottom-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
 
-.footer-bottom p {
-    color: var(--gray);
-    font-size: 0.9rem;
-}
+        .footer-bottom p {
+            color: var(--gray);
+            font-size: 0.9rem;
+        }
 
-.footer-badges {
-    display: flex;
-    gap: 10px;
-}
+        .footer-badges {
+            display: flex;
+            gap: 10px;
+        }
 
-.badge {
-    background: rgba(255, 255, 255, 0.1);
-    padding: 6px 12px;
-    border-radius: 20px;
-    font-size: 0.8rem;
-    color: var(--gray);
-    border: 1px solid rgba(255, 255, 255, 0.1);
-    transition: all 0.3s ease;
-}
+        .badge {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 6px 12px;
+            border-radius: 20px;
+            font-size: 0.8rem;
+            color: var(--gray);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            transition: all 0.3s ease;
+        }
 
-.badge:hover {
-    background: rgba(79, 70, 229, 0.2);
-    color: white;
-    border-color: rgba(79, 70, 229, 0.5);
-}
+        .badge:hover {
+            background: rgba(79, 70, 229, 0.2);
+            color: white;
+            border-color: rgba(79, 70, 229, 0.5);
+        }
 
-/* Responsive Design */
-@media (max-width: 992px) {
-    .footer-content {
-        grid-template-columns: 1fr;
-        gap: 40px;
-    }
-    
-    .footer-main {
-        align-items: center;
-        text-align: center;
-    }
-    
-    .footer-description {
-        max-width: 400px;
-    }
-}
+        /* Responsive Design */
+        @media (max-width: 992px) {
+            .footer-content {
+                grid-template-columns: 1fr;
+                gap: 40px;
+            }
+            
+            .footer-main {
+                align-items: center;
+                text-align: center;
+            }
+            
+            .footer-description {
+                max-width: 400px;
+            }
+        }
 
-@media (max-width: 768px) {
-    .footer-links-grid {
-        grid-template-columns: repeat(2, 1fr);
-        gap: 30px;
-    }
-    
-    .footer-bottom-content {
-        flex-direction: column;
-        gap: 20px;
-        text-align: center;
-    }
-    
-    .footer-badges {
-        justify-content: center;
-    }
-}
+        @media (max-width: 768px) {
+            .footer-links-grid {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 30px;
+            }
+            
+            .footer-bottom-content {
+                flex-direction: column;
+                gap: 20px;
+                text-align: center;
+            }
+            
+            .footer-badges {
+                justify-content: center;
+            }
+        }
 
-@media (max-width: 480px) {
-    .footer-links-grid {
-        grid-template-columns: 1fr;
-        gap: 30px;
-    }
-    
-    .footer-content {
-        gap: 30px;
-    }
-    
-    footer {
-        padding: 60px 0 20px;
-    }
-    
-    .footer-logo {
-        height: 40px;
-    }
-}
+        @media (max-width: 480px) {
+            .footer-links-grid {
+                grid-template-columns: 1fr;
+                gap: 30px;
+            }
+            
+            .footer-content {
+                gap: 30px;
+            }
+            
+            footer {
+                padding: 60px 0 20px;
+            }
+            
+            .footer-logo {
+                height: 40px;
+            }
+        }
 
-/* Animation for footer elements */
-.footer-column,
-.footer-main {
-    opacity: 0;
-    transform: translateY(20px);
-    animation: fadeInUp 0.6s ease forwards;
-}
+        /* Animation for footer elements */
+        .footer-column,
+        .footer-main {
+            opacity: 0;
+            transform: translateY(20px);
+            animation: fadeInUp 0.6s ease forwards;
+        }
 
-.footer-column:nth-child(1) { animation-delay: 0.1s; }
-.footer-column:nth-child(2) { animation-delay: 0.2s; }
-.footer-column:nth-child(3) { animation-delay: 0.3s; }
-.footer-main { animation-delay: 0s; }
+        .footer-column:nth-child(1) { animation-delay: 0.1s; }
+        .footer-column:nth-child(2) { animation-delay: 0.2s; }
+        .footer-column:nth-child(3) { animation-delay: 0.3s; }
+        .footer-main { animation-delay: 0s; }
 
-@keyframes fadeInUp {
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
+        @keyframes fadeInUp {
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
         
         /* Responsive Design */
         @media (max-width: 992px) {
@@ -1112,24 +1110,23 @@ footer::before {
 </head>
 <body>
    <!-- Header with Branding -->
-<!-- Header with Branding -->
-<header class="header">
-    <div class="container">
-        <div class="header-content">
-            <a href="https://aaeriosoft.co.in" target="_blank" class="brand-link">
-                <div class="brand">
-                    <img src="logo.svg" alt="Aaeriosoft Logo" class="brand-logo">
-                </div>
-            </a>
-            <div class="header-actions">
-                <a href="https://aaeriosoft.co.in/careers" target="_blank" class="careers-btn">
-                    <span>Open Roles</span>
-                    <i class="fas fa-external-link-alt"></i>
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <a href="https://aaeriosoft.co.in" target="_blank" class="brand-link">
+                    <div class="brand">
+                        <img src="logo.svg" alt="Aaeriosoft Logo" class="brand-logo">
+                    </div>
                 </a>
+                <div class="header-actions">
+                    <a href="https://aaeriosoft.co.in/careers" target="_blank" class="careers-btn">
+                        <span>Open Roles</span>
+                        <i class="fas fa-external-link-alt"></i>
+                    </a>
+                </div>
             </div>
         </div>
-    </div>
-</header>
+    </header>
 
     <!-- Hero Section -->
     <section class="hero">
@@ -1144,7 +1141,7 @@ footer::before {
                     </div>
                     <h1 class="animated fadeInUp">Begin Your <span>Assessment</span> Today</h1>
                     <p class="animated fadeInUp delay-1">Take our quick 30-minute assessment test to showcase your skills and qualify for opportunities at Aaeriosoft.</p>
-                  <a href="payment.html" target="_blank" class="btn-primary animated fadeInUp delay-2 pulse">Start Assessment Test</a>
+                    <a href="payment.html" target="_blank" class="btn-primary animated fadeInUp delay-2 pulse">Start Assessment Test</a>
                     <div class="hero-stats">
                         <div class="stat animated fadeIn delay-1">
                             <div class="stat-number">30 min</div>
@@ -1364,81 +1361,81 @@ footer::before {
             <div class="cta-content">
                 <h2 class="animated fadeInUp">Ready to Join Aaeriosoft?</h2>
                 <p class="animated fadeInUp delay-1">Take the first step toward an exciting career with performance-based incentives and flexible work options at Aaeriosoft. Complete your assessment today!</p>
-                <a href="payment.html" target="_blank" class="btn-primary animated fadeInUp delay-2 pulse" >Start Assessment Test</a>
+                <a href="payment.html" target="_blank" class="btn-primary animated fadeInUp delay-2 pulse">Start Assessment Test</a>
             </div>
         </div>
     </section>
-<!-- Footer -->
-<footer>
-    <div class="container">
-        <div class="footer-content">
-            <div class="footer-main">
-                <a href="https://aaeriosoft.co.in" target="_blank" class="footer-brand">
-                    <img src="logo.svg" alt="Aaeriosoft Logo" class="footer-logo">
-                </a>
-                <p class="footer-description">
-                    Empowering businesses with innovative digital solutions and top-tier talent.
-                </p>
-                <div class="social-links">
-                    <a href="#" class="social-link">
-                        <i class="fab fa-linkedin-in"></i>
+    
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-main">
+                    <a href="https://aaeriosoft.co.in" target="_blank" class="footer-brand">
+                        <img src="logo.svg" alt="Aaeriosoft Logo" class="footer-logo">
                     </a>
-                    <a href="#" class="social-link">
-                        <i class="fab fa-twitter"></i>
-                    </a>
-                    <a href="#" class="social-link">
-                        <i class="fab fa-github"></i>
-                    </a>
-                    <a href="#" class="social-link">
-                        <i class="fab fa-instagram"></i>
-                    </a>
+                    <p class="footer-description">
+                        Empowering businesses with innovative digital solutions and top-tier talent.
+                    </p>
+                    <div class="social-links">
+                        <a href="#" class="social-link">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a href="#" class="social-link">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#" class="social-link">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="#" class="social-link">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="footer-links-grid">
+                    <div class="footer-column">
+                        <h4>Company</h4>
+                        <div class="footer-links">
+                            <a href="https://aaeriosoft.co.in/about">About Us</a>
+                            <a href="https://aaeriosoft.co.in/careers">Careers</a>
+                            <a href="https://aaeriosoft.co.in/services">Services</a>
+                            <a href="https://aaeriosoft.co.in/jobs">Open Roles</a>
+                        </div>
+                    </div>
+                    
+                    <div class="footer-column">
+                        <h4>Support</h4>
+                        <div class="footer-links">
+                            <a href="https://aaeriosoft.co.in/contact">Contact Us</a>
+                            <a href="https://aaeriosoft.co.in/help">Help Center</a>
+                            <a href="https://aaeriosoft.co.in/documentation">Documentation</a>
+                            <a href="https://aaeriosoft.co.in/status">System Status</a>
+                        </div>
+                    </div>
+                    
+                    <div class="footer-column">
+                        <h4>Legal</h4>
+                        <div class="footer-links">
+                            <a href="https://aaeriosoft.co.in/privacy">Privacy Policy</a>
+                            <a href="https://aaeriosoft.co.in/terms">Terms of Service</a>
+                            <a href="https://aaeriosoft.co.in/security">Security</a>
+                        </div>
+                    </div>
                 </div>
             </div>
             
-            <div class="footer-links-grid">
-                <div class="footer-column">
-                    <h4>Company</h4>
-                    <div class="footer-links">
-                        <a href="https://aaeriosoft.co.in/about">About Us</a>
-                        <a href="https://aaeriosoft.co.in/careers">Careers</a>
-                        <a href="https://aaeriosoft.co.in/services">Services</a>
-                        <a href="https://aaeriosoft.co.in/jobs">Open Roles</a>
-                    </div>
-                </div>
-                
-                <div class="footer-column">
-                    <h4>Support</h4>
-                    <div class="footer-links">
-                        <a href="https://aaeriosoft.co.in/contact">Contact Us</a>
-                        <a href="https://aaeriosoft.co.in/help">Help Center</a>
-                        <a href="https://aaeriosoft.co.in/documentation">Documentation</a>
-                        <a href="https://aaeriosoft.co.in/status">System Status</a>
-                    </div>
-                </div>
-                
-                <div class="footer-column">
-                    <h4>Legal</h4>
-                    <div class="footer-links">
-                        <a href="https://aaeriosoft.co.in/privacy">Privacy Policy</a>
-                        <a href="https://aaeriosoft.co.in/terms">Terms of Service</a>
-               
-                        <a href="https://aaeriosoft.co.in/security">Security</a>
+            <div class="footer-bottom">
+                <div class="footer-bottom-content">
+                    <p>&copy; 2025 Aaeriosoft. All rights reserved.</p>
+                    <div class="footer-badges">
+                        <span class="badge">🚀 Innovating Tomorrow</span>
+                        <span class="badge">💼 Hiring Talents</span>
                     </div>
                 </div>
             </div>
         </div>
-        
-        <div class="footer-bottom">
-            <div class="footer-bottom-content">
-                <p>&copy; 2025 Aaeriosoft. All rights reserved.</p>
-                <div class="footer-badges">
-                    <span class="badge">🚀 Innovating Tomorrow</span>
-                    <span class="badge">💼 Hiring Talents</span>
-                </div>
-            </div>
-        </div>
-    </div>
-</footer>
+    </footer>
 
     <script>
         // Enhanced animation on scroll
@@ -1467,8 +1464,14 @@ footer::before {
                 observer.observe(el);
             });
             
-            // Smooth scrolling for CTA buttons
+            // Fixed: Only apply smooth scrolling to buttons that don't have external links
             document.querySelectorAll('.btn-primary').forEach(btn => {
+                // Check if the button is linking to an external page
+                if (btn.getAttribute('href') && btn.getAttribute('href').includes('payment.html')) {
+                    // Don't add the click event for payment buttons
+                    return;
+                }
+                
                 btn.addEventListener('click', function(e) {
                     e.preventDefault();
                     
