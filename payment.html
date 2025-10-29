@@ -1093,7 +1093,7 @@
                 alert('TERMS & CONDITIONS\n\n• Assessment Fee: ₹499 covers comprehensive evaluation and processing costs\n• Quality Assurance: Fee helps maintain high standards in our talent community\n• Non-refundable: Fee ensures commitment from serious candidates\n• Performance-Based: Successful candidates join our incentive-driven model\n• No Guarantees: Assessment completion doesn\'t guarantee placement\n• Fair Evaluation: All candidates assessed objectively and fairly\n\nThis model benefits everyone by ensuring only motivated professionals join our community.');
             });
             
-            // Payment button click handler
+            // Payment button click handler - UPDATED with Razorpay redirect
             payButton.addEventListener('click', function() {
                 if (!termsCheckbox.checked) {
                     alert('Please confirm you understand the terms to proceed.');
@@ -1102,20 +1102,13 @@
                 
                 // Show processing message
                 const originalText = payButton.innerHTML;
-                payButton.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Securing Your Spot...';
+                payButton.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Redirecting to Payment...';
                 payButton.disabled = true;
                 
-                // Simulate API call to Razorpay
+                // Redirect to Razorpay payment page
                 setTimeout(() => {
-                    // In a real implementation, this would redirect to Razorpay
-                    // window.location.href = 'https://razorpay.com/payment-link';
-                    
-                    alert('🎉 Perfect! Redirecting to secure payment...\n\nYour ₹499 investment is the first step toward unlimited earning potential!');
-                    
-                    // Reset button (in real scenario, this wouldn't happen)
-                    payButton.innerHTML = originalText;
-                    payButton.disabled = false;
-                }, 2000);
+                    window.location.href = 'https://rzp.io/rzp/KIT0xuNm';
+                }, 1500);
             });
             
             // Fake scarcity timer
