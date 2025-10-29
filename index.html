@@ -86,7 +86,7 @@
         }
 
         .brand-logo {
-            height: 45px; /* Increased size for desktop */
+            height: 45px;
             width: auto;
             display: block;
             transition: all 0.3s ease;
@@ -130,7 +130,7 @@
         /* Responsive Design */
         @media (min-width: 1200px) {
             .brand-logo {
-                height: 50px; /* Even larger for big desktop screens */
+                height: 50px;
             }
             
             .careers-btn {
@@ -141,7 +141,7 @@
 
         @media (max-width: 768px) {
             .brand-logo {
-                height: 40px; /* Slightly smaller for tablets */
+                height: 40px;
             }
             
             .careers-btn {
@@ -150,7 +150,7 @@
             }
             
             .careers-btn span {
-                display: none; /* Hide text on smaller screens */
+                display: none;
             }
             
             .careers-btn i {
@@ -161,7 +161,7 @@
 
         @media (max-width: 480px) {
             .brand-logo {
-                height: 35px; /* Smaller for mobile */
+                height: 35px;
             }
             
             .header {
@@ -177,32 +177,6 @@
         .header.scrolled {
             background: rgba(3, 0, 20, 0.98);
             box-shadow: 0 2px 20px rgba(0, 0, 0, 0.3);
-        }
-
-        /* Responsive adjustments */
-        @media (max-width: 768px) {
-            .brand {
-                gap: 8px;
-                padding: 6px 15px;
-            }
-            
-            .brand-logo {
-                height: 30px;
-            }
-            
-            .brand-name {
-                font-size: 1.2rem;
-            }
-        }
-
-        @media (max-width: 480px) {
-            .brand-name {
-                display: none; /* Hide text on very small screens */
-            }
-            
-            .brand-logo {
-                height: 35px; /* Slightly larger logo when text is hidden */
-            }
         }
 
         /* Hero Section */
@@ -412,10 +386,12 @@
             color: var(--gray);
         }
         
-        /* Hiring Process Section */
+        /* Hiring Process Section - Fixed */
         .process-section {
             background: rgba(15, 23, 42, 0.7);
             padding: 100px 0;
+            position: relative;
+            overflow: hidden;
         }
         
         .process-steps {
@@ -429,8 +405,8 @@
             content: '';
             position: absolute;
             top: 40px;
-            left: 0;
-            right: 0;
+            left: 10%;
+            right: 10%;
             height: 2px;
             background: linear-gradient(90deg, var(--primary), var(--secondary));
             z-index: 1;
@@ -447,7 +423,6 @@
             width: 80px;
             height: 80px;
             background: var(--dark);
-            border: 2px solid var(--primary);
             border-radius: 50%;
             display: flex;
             align-items: center;
@@ -455,13 +430,24 @@
             margin: 0 auto 20px;
             font-size: 1.5rem;
             font-weight: 700;
-            color: var(--primary);
+            position: relative;
+            z-index: 3;
+        }
+        
+        .step-number::before {
+            content: '';
+            position: absolute;
+            top: -3px;
+            left: -3px;
+            right: -3px;
+            bottom: -3px;
+            background: linear-gradient(135deg, var(--primary), var(--secondary));
+            border-radius: 50%;
+            z-index: -1;
         }
         
         .step.active .step-number {
-            background: linear-gradient(135deg, var(--primary), var(--secondary));
             color: white;
-            border-color: transparent;
         }
         
         .step h3 {
@@ -527,46 +513,6 @@
             color: var(--gray);
         }
         
-        /* Skills Assessment Section */
-        .skills-section {
-            padding: 100px 0;
-            background: rgba(15, 23, 42, 0.7);
-        }
-        
-        .skills-list {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 20px;
-            margin-top: 40px;
-        }
-        
-        .skill-item {
-            background: var(--card-bg);
-            border-radius: 10px;
-            padding: 20px;
-            display: flex;
-            align-items: center;
-            gap: 15px;
-            border: 1px solid rgba(255, 255, 255, 0.1);
-            transition: all 0.3s ease;
-        }
-        
-        .skill-item:hover {
-            transform: translateY(-5px);
-            border-color: rgba(79, 70, 229, 0.3);
-        }
-        
-        .skill-icon {
-            width: 40px;
-            height: 40px;
-            background: linear-gradient(135deg, var(--primary), var(--secondary));
-            border-radius: 8px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: white;
-        }
-        
         /* FAQ Section */
         .faq-section {
             padding: 100px 0;
@@ -622,15 +568,15 @@
             transform: rotate(45deg);
         }
         
-        /* CTA Section */
+        /* CTA Section - Improved Spacing */
         .cta-section {
             background: linear-gradient(135deg, rgba(79, 70, 229, 0.1), rgba(236, 72, 153, 0.1));
             border-radius: 30px;
-            padding: 80px 40px;
+            padding: 100px 40px;
             text-align: center;
             position: relative;
             overflow: hidden;
-            margin: 100px 0;
+            margin: 120px 0;
             border: 1px solid rgba(255, 255, 255, 0.1);
         }
         
@@ -1203,7 +1149,7 @@
         </div>
     </section>
 
-    <!-- Hiring Process Section -->
+    <!-- Hiring Process Section - Fixed -->
     <section class="process-section">
         <div class="container">
             <div class="section-title">
@@ -1355,7 +1301,7 @@
         </div>
     </section>
 
-    <!-- CTA Section -->
+    <!-- CTA Section - Improved Spacing -->
     <section class="cta-section" id="assessment">
         <div class="container">
             <div class="cta-content">
