@@ -764,5 +764,16 @@ December | Online Proctored Assessment
             });
         });
     </script>
+    <script>
+function downloadFile(filename) {
+    const link = document.createElement('a');
+    link.href = filename; // path to your PDF file
+    link.download = filename;
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+}
+</script>
+
 </body>
 </html>
